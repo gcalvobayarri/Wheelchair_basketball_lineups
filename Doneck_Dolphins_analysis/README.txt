@@ -1,6 +1,6 @@
 SOFTWARE NEEDED: R and JAGS. All codes are in R language.
 
-This folder contains the statistical analysis carried out in the real case application of the paper "Selecting the best compositions of a wheelchair basketball team: a mathematical approach". The material available here is as follows.
+This folder contains the statistical analysis carried out in the real case application of the paper "Selecting the best compositions of a wheelchair basketball team: a data-driven approach". The material available here is as follows.
 
 1. Folder "data": it includes four elements, i. e., data_players.xlsx, data_trier.xlsx, line_ups.RData and Trier_data_clean.RData. 
 data_players.xlsx: Functional classification and sex of the players (excel format).
