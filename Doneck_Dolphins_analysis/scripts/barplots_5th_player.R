@@ -8,8 +8,10 @@ p_player <- data.frame(Player = rep(c("D. Green", "L. Jung", "N. Passivan",
                        Metric=c(rep("EFF",5), rep("PIR",5), rep("Win Score",5)))
 
 library(ggplot2)
+library(viridis)
 
 ggplot(p_player, aes(x=Player, y=Probability, fill = Metric)) + 
   geom_bar(stat = "identity", position = position_dodge())  +
+  scale_fill_viridis(discrete = TRUE, option = "D")+
   theme_test(base_size = 20, base_line_size = 15/20) +
   labs(x=element_blank())

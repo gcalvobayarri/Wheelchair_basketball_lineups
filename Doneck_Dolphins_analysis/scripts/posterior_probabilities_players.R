@@ -56,11 +56,13 @@ P_inclusion <- data.frame(
 
 
 library(ggplot2)
+library(viridis)
 ggplot(P_inclusion, aes(Player, Probability, colour = Metric, shape=Metric)) +
   geom_point(size = 5, alpha = 0.8) +
   theme_test(base_size = 20, base_line_size = 15/20)+   
   guides(color=guide_legend(title= expression(paste("P(", italic(I)[i],')')), 
                              override.aes=list(shape = c(19, 17, 15)), color = F)) +
+  scale_color_viridis(discrete = TRUE, option = "D")+
   # theme(legend.position = "none")+
   labs(x=element_blank())+
   theme(axis.text.x = element_text(angle = 90, vjust = 0.3, hjust=1)) +
